@@ -64,6 +64,9 @@ color: #757575;
     color: #2196F3;
 }
 /*HERO*/
+.hero {
+background: #2F303A;
+}
 .hero-heading {
 font-family: var(main-font-family);
 font-weight: 900;
@@ -72,7 +75,7 @@ line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-/* color: #FFFFFF; */
+color: #FFFFFF;
 }
 .hero-btn{
 font-family: var(main-font-family);
@@ -143,26 +146,11 @@ text-align: center;
 letter-spacing: 0.03em;
 color: #757575;
 }
-/*FOOTER*/
-.footter-contact-link {
-font-family: var(main-font-family);
-font-weight: normal;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-/*color: rgba(255, 255, 255, 0.6);*/
-}
-.address-link {
-font-family: var(--main-font-family);
-font-weight: normal;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-/*color: #FFFFFF;*/
-}
-
 
 /*PORTFOLIO-PAGE*/
+.visually-hidden {
+display:none;
+}
 .filter-btn {
 font-family: var(--main-font-family);
 font-weight: 500;
@@ -200,4 +188,28 @@ font-size: 16px;
 line-height: 1.9;
 letter-spacing: 0.03em;
 color: #757575;
+}
+
+/*FOOTER*/
+.footter-contact-link {
+font-family: var(main-font-family);
+font-weight: normal;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
+.address-link {
+font-family: var(--main-font-family);
+font-weight: normal;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+}
+.footer {
+background-color: #2F303A;;
+}
+.footer-span {
+color: #FFFFFF;
 }
