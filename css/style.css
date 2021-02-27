@@ -1,5 +1,10 @@
 :root {
-    --main-font-family: Roboto, sans-serif; 
+    --main-font-family: Roboto, sans-serif;
+    --main-color: #212121;
+    --second-color: #757575;
+    --blue-color: #2196F3;
+    --white-color: #FFFFFF;
+    --background-hero-color: #2F303A 
 }
 .link {
     text-decoration: none;
@@ -14,29 +19,30 @@
     font-style: normal;
 }
 
-.body {
+body {
 font-family: var(main-font-family);
-font-weight: 500;
-font-size: 14px;
-line-height:1.14;
-letter-spacing: 0.02em;
-color: #212121;
+font-weight: 400;
+color: var(--main-color);
 
 }
 /*NAVIGATION*/
 .navigation-link {
-font-family: var(main-font-family);
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: #212121;
+color: var(--main-color);
 }
+
+.navigation-list .link.current {
+color: var(--blue-color);
+}
+
 .navigation-link:focus,
 .navigation-link:hover,
 .navigation-link:active {
-color: #2196F3;
+color: var(--blue-color);
 }
 .logo-link {
 font-family: Raleway;
@@ -45,10 +51,10 @@ font-weight: bold;
 font-size: 26px;
 line-height: 1.20;
 letter-spacing: 0.03em;
-color: #2196F3;
+color: var(--blue-color);
 }
 .logo-span {
-    color:#000000;
+color:#000000;
 }
 .contact-link {
 font-family: var(main-font-family);
@@ -57,15 +63,15 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: #757575;
+color: var(--second-color);
 }
 .contact-link:focus,
 .contact-link:hover {
-    color: #2196F3;
+    color: var(--blue-color);
 }
 /*HERO*/
 .hero {
-background: #2F303A;
+background: var(--background-hero-color);
 }
 .hero-heading {
 font-family: var(main-font-family);
@@ -75,10 +81,10 @@ line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-color: #FFFFFF;
+color: var(--white-color);
 }
 .hero-btn{
-font-family: var(main-font-family);
+font-family:var(--main-font-family) ;
 font-weight: bold;
 font-size: 16px;
 line-height: 1.9;
@@ -86,8 +92,8 @@ display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
-color: #FFFFFF;
-background-color: #2196F3;
+color: var(--white-color);
+background-color: var(--blue-color);
 }
 /*QUALITY*/
 .quality-heading {
@@ -97,7 +103,7 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: #212121;
+color: var(--main-color);
 }
 .quality-paragraph {
 font-family: var(main-font-family);
@@ -105,7 +111,7 @@ font-weight: normal;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: #757575;
+color: var(--second-color);
 }
 /*WORK*/
 .work-heading {
@@ -115,7 +121,7 @@ font-size: 36px;
 line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
-color: #212121;
+color: var(--main-color);
 }
 /*TEAM*/
 .team-heading {
@@ -125,7 +131,7 @@ font-size: 16px;
 line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
-color: #212121;
+color: var(--main-color);
 
 }
 .team-head {
@@ -135,7 +141,7 @@ font-size: 36px;
 line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
-color: #212121;
+color: var(--main-color);
 }
 .team-paragraph {
 font-family: var(--main-font-family);
@@ -144,12 +150,12 @@ font-size: 16px;
 line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
-color: #757575;
+color: var(--second-color);
 }
 
 /*PORTFOLIO-PAGE*/
 .visually-hidden {
-display:none;
+display: none;
 }
 .filter-btn {
 font-family: var(--main-font-family);
@@ -158,18 +164,18 @@ font-size: 16px;
 line-height: 1.6;
 text-align: center;
 letter-spacing: 0.03em;
-color:#212121;
+color: var(--main-color);
 }
 .filter-btn:focus,
 .filter-btn:hover {
-background: #2196F3;
+background: var(--blue-color);
 font-family: var(--main-font-family);
 font-weight: 500;
 font-size: 16px;
 line-height: 1.6;
 text-align: center;
 letter-spacing: 0.03em;
-color: #FFFFFF;
+color: var(--white-color);
 
 }
 /*PORTFOLIO*/
@@ -179,7 +185,7 @@ font-weight: bold;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
-color: #212121;
+color: var(--main-color);
 }
 .portfolio-paragraph {
 font-family: var(main-font-family);
@@ -187,7 +193,7 @@ font-weight: normal;
 font-size: 16px;
 line-height: 1.9;
 letter-spacing: 0.03em;
-color: #757575;
+color: var(--second-color);
 }
 
 /*FOOTER*/
@@ -205,11 +211,11 @@ font-weight: normal;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: #FFFFFF;
+color: var(--white-color);
 }
 .footer {
-background-color: #2F303A;;
+background-color: var(--background-hero-color);
 }
 .footer-span {
-color: #FFFFFF;
+color: var(--white-color);
 }
